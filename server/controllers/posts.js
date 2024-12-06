@@ -73,3 +73,4 @@ export const likePost = async (req, res) => {
   }
 };
 
+// this is responsible for what we post on social media 
