@@ -15,3 +15,4 @@ const UserImage = ({ image, size = "60px" }) => {
 };
 
 export default UserImage;
+// connectionto db host
