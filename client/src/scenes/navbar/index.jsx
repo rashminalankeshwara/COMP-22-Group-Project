@@ -56,7 +56,7 @@ const Navbar = () => {
             },
           }}
         >
-          Sociopedia
+          CyberSurge
         </Typography>
         {isNonMobileScreens && (
           <FlexBetween
