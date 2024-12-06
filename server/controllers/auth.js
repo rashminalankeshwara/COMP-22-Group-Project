@@ -33,9 +33,9 @@ export const register = async (req, res) => {
         });
         const savedUser = await newUser.save();
         res.status(201).json(savedUser);
-        
+
     } catch (err) {
-        res.status(500).json({error:err.message});
+        res.status(500).json({ error: err.message });
     }
 };
 /* LOGGING IN */
@@ -50,10 +50,10 @@ export const login = async (req, res) => {
 
         const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET);
         delete user.password;
-        res.status(200).json({token, user});
+        res.status(200).json({ token, user });
     } catch (err) {
         res.status(500).json({ error: err.message });
     }
 };
 
-
+// This  the is authentication
